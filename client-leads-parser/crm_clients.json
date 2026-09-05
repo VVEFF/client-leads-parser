@@ -1,0 +1,16 @@
+[
+    {
+        "name": "John",
+        "email": "john@example.com",
+        "telegram": "@john123",
+        "source": "Telegram",
+        "message": "How much does it cost"
+    },
+    {
+        "name": "Anna",
+        "email": "anna@example.com",
+        "telegram": "@anna_work",
+        "source": "Avito",
+        "message": "Interested in cooperation"
+    }
+]
