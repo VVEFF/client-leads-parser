@@ -25,11 +25,6 @@ invalid_df.to_csv("invalid_clients.csv", index=False)
 with open("crm_clients.json", "w", encoding="utf-8") as file:
     json.dump(clients, file, ensure_ascii=False, indent=4)
 
-'''  
-    # This was supposed to be a submission to the CRM.for client in clients:  
-    response = requests.post( CRM_URL,headers=HEADERS,json=client)  
-    print(response.status_code)'''
-
 print(
     "VALID\n",
     valid_df,
