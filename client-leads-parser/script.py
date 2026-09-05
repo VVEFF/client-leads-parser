@@ -10,10 +10,10 @@ df = pd.read_csv(
 required = ["name", "email", "telegram", "source", "message"]
 
 invalid_df = df[df[required].isna().any(axis=1)]
-invalid_df = invalid_df.drop_duplicates(subset=["message", "email"])
+invalid_df = invalid_df.drop_duplicates(subset=["message","email","source", "telegram","name"])
 
 valid_df = df[~df[required].isna().any(axis=1)]
-valid_df = valid_df.drop_duplicates(subset=["message", "email"])
+valid_df = valid_df.drop_duplicates(subset=["message","email","source", "telegram","name"])
 
 application_account = valid_df["source"].value_counts()
 clients = valid_df.to_dict(orient="records")
